@@ -1,22 +1,27 @@
 # My Azure Portfolio Website
 
 ## About
-This is my first project! A portfolio website hosted on Microsoft Azure.
+My first cloud project! A Node.js app deployed on Microsoft Azure using Docker.
 
 ## Live Website
-http://104.43.112.161
+https://sasini-cloud.duckdns.org
 
 ## What I did
 - Created an Azure Virtual Machine
 - Installed and configured Nginx web server
-- Opened port 80 in Network Security Group
-- Deployed HTML website on Azure VM
+- Opened ports in Network Security Group
+- Deployed Node.js application
+- Containerized app using Docker
+- Added SSL certificate with Let's Encrypt
+- Connected custom domain
 
 ## Skills Used
 - Microsoft Azure
 - Linux
 - Nginx
-- HTML
+- Node.js
+- Docker
+- SSL/HTTPS
 - Networking
 
 ## Certification
