@@ -1,28 +1,33 @@
-# My Azure Portfolio Website
+# My Azure Cloud Infrastructure Project
 
 ## About
-My first cloud project! A Node.js app deployed on Microsoft Azure using Docker.
+A production-ready cloud infrastructure built on Microsoft Azure.
 
 ## Live Website
 https://sasini-cloud.duckdns.org
 
-## What I did
-- Created an Azure Virtual Machine
-- Installed and configured Nginx web server
-- Opened ports in Network Security Group
-- Deployed Node.js application
+## What I Built
+- Created Azure Virtual Machine (Ubuntu)
+- Configured Virtual Network (VNet) with Subnets
+- Set up Network Security Group (NSG) rules
+- Installed and configured Nginx as reverse proxy
+- Built Node.js web application
 - Containerized app using Docker
 - Added SSL certificate with Let's Encrypt
-- Connected custom domain
+- Connected custom domain (DuckDNS)
+- Set up Azure Monitor with CPU alerts
+- Configured Azure Load Balancer
 
 ## Skills Used
 - Microsoft Azure
-- Linux
-- Nginx
+- Linux (Ubuntu)
+- Nginx (reverse proxy)
 - Node.js
 - Docker
 - SSL/HTTPS
-- Networking
+- Networking (VNet, Subnets, NSG)
+- Azure Monitor
+- Load Balancing
 
 ## Certification
 - Microsoft Azure Fundamentals (AZ-900)
