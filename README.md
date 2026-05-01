@@ -1,46 +1,42 @@
-# My Azure DevOps Project
+## CI/CD Pipeline
+1. Push code to GitHub
+2. GitHub Actions triggered automatically
+3. SSH into Azure VM
+4. Pull latest code
+5. PM2 restarts application
+6. Zero downtime deployment
 
-## About
-A production-ready cloud infrastructure with full CI/CD pipeline built on Microsoft Azure.
+## Security Implementation
+- Restricted inbound ports via NSG (only 22, 80, 443)
+- HTTPS enforced via SSL (Let's Encrypt)
+- Nginx blocks direct access to Node.js port
+- SSH authentication for server access
 
-## Live Website
-https://sasini-cloud.duckdns.org
-
-## Architecture
-Internet → Load Balancer → Nginx → Docker → Node.js
+## Challenges Faced & Solved
+- Nginx config issues → fixed by checking error logs
+- SSL certificate setup → solved using Certbot
+- Docker port mapping → resolved by checking container logs
+- GitHub Actions SSH auth → fixed by configuring sshd_config
 
 ## What I Built
-- Created Azure Virtual Machine (Ubuntu)
-- Configured Virtual Network (VNet) with 2 Subnets
-- Set up Network Security Group (NSG) rules
-- Installed Nginx as reverse proxy
-- Built Node.js web application
-- Containerized app using Docker
-- Added SSL certificate with Let's Encrypt
-- Connected custom domain (DuckDNS)
-- Set up Azure Monitor with CPU alerts
-- Configured Azure Load Balancer
-- Built CI/CD pipeline with GitHub Actions
-
-## CI/CD Pipeline
-- Push code to GitHub
-- GitHub Actions automatically deploys to Azure VM
-- Zero manual deployment needed
+- Azure VM (Ubuntu 24.04)
+- Virtual Network with 2 Subnets
+- Network Security Group rules
+- Nginx reverse proxy
+- Node.js application
+- Docker containerization
+- SSL/HTTPS encryption
+- Custom domain (DuckDNS)
+- Azure Monitor + CPU alerts
+- Azure Load Balancer
+- GitHub Actions CI/CD
 
 ## Skills Used
-- Microsoft Azure
-- Linux (Ubuntu)
-- Nginx (reverse proxy)
-- Node.js
-- Docker
-- SSL/HTTPS
-- Networking (VNet, Subnets, NSG)
-- Azure Monitor
-- Load Balancing
-- GitHub Actions (CI/CD)
+Azure, Linux, Nginx, Node.js, Docker, SSL, 
+Networking, Monitoring, Load Balancing, CI/CD
 
 ## Certification
-- Microsoft Azure Fundamentals (AZ-900)
+Microsoft Azure Fundamentals (AZ-900)
 
 ## Author
 Sasini Kalpani | Sri Lanka
