@@ -1,42 +1,62 @@
-## CI/CD Pipeline
-1. Push code to GitHub
-2. GitHub Actions triggered automatically
-3. SSH into Azure VM
-4. Pull latest code
-5. PM2 restarts application
-6. Zero downtime deployment
+# 🚀 Azure DevOps Infrastructure Project
 
-## Security Implementation
-- Restricted inbound ports via NSG (only 22, 80, 443)
-- HTTPS enforced via SSL (Let's Encrypt)
-- Nginx blocks direct access to Node.js port
-- SSH authentication for server access
+## 📌 About
+A production-ready cloud infrastructure built on Microsoft Azure, featuring containerization, CI/CD automation, monitoring, and security best practices.
 
-## Challenges Faced & Solved
-- Nginx config issues → fixed by checking error logs
-- SSL certificate setup → solved using Certbot
-- Docker port mapping → resolved by checking container logs
-- GitHub Actions SSH auth → fixed by configuring sshd_config
+## 🌐 Live Website
+https://sasini-cloud.duckdns.org
 
-## What I Built
-- Azure VM (Ubuntu 24.04)
-- Virtual Network with 2 Subnets
-- Network Security Group rules
-- Nginx reverse proxy
-- Node.js application
+## 🏗 Architecture Flow
+User traffic flows through:
+
+Azure Load Balancer → Nginx Reverse Proxy → Docker Container (Node.js Application) → Secure HTTPS Response
+
+The system is monitored using Azure Monitor for performance and health tracking.
+
+## 🔄 CI/CD Pipeline
+- Code pushed to GitHub repository
+- GitHub Actions automatically triggered on each push
+- SSH-based deployment to Azure Virtual Machine
+- Application updated using git pull and restarted with PM2
+- Fully automated deployment with minimal manual intervention
+- Rollback supported using previous commit or PM2 restart strategy
+
+## 🔐 Security Implementation
+- NSG configured to allow only required ports (22, 80, 443)
+- HTTPS enforced using Let's Encrypt SSL certificates
+- Nginx configured as reverse proxy to prevent direct access to Node.js backend
+- Secure SSH authentication implemented for server access
+
+## ⚠️ Challenges Faced & Solutions
+- Nginx configuration issues → Resolved using log analysis and debugging
+- SSL certificate setup → Implemented using Certbot with auto-renewal configuration
+- Docker port mapping issues → Fixed by inspecting container logs and correcting port bindings
+- GitHub Actions SSH authentication → Solved using secure key-based authentication setup
+
+## 🧱 Infrastructure Built
+- Azure Virtual Machine (Ubuntu 24.04)
+- Virtual Network (VNet) with 2 subnets
+- Network Security Group (NSG) configuration
+- Nginx reverse proxy setup
+- Node.js application deployment
 - Docker containerization
-- SSL/HTTPS encryption
-- Custom domain (DuckDNS)
-- Azure Monitor + CPU alerts
-- Azure Load Balancer
-- GitHub Actions CI/CD
+- SSL/HTTPS encryption (Let's Encrypt)
+- Custom domain integration (DuckDNS)
+- Azure Monitor with CPU alert rules
+- Azure Load Balancer implementation
+- GitHub Actions CI/CD pipeline
 
-## Skills Used
-Azure, Linux, Nginx, Node.js, Docker, SSL, 
-Networking, Monitoring, Load Balancing, CI/CD
+## 🏆 Key Achievements
+- Built a fully automated CI/CD pipeline enabling push-based deployments via GitHub Actions
+- Implemented layered security using NSG, SSH key authentication, and HTTPS encryption
+- Designed a scalable cloud architecture using Azure Load Balancer and Docker containerization
+- Improved deployment efficiency through automation and reduced manual intervention
 
-## Certification
+## 🧠 Skills Demonstrated
+Microsoft Azure, Linux Administration, Nginx, Node.js, Docker, SSL/TLS, Networking (VNet, NSG), Monitoring, Load Balancing, CI/CD Automation
+
+## 🎓 Certification
 Microsoft Azure Fundamentals (AZ-900)
 
-## Author
+## 👤 Author
 Sasini Kalpani | Sri Lanka
