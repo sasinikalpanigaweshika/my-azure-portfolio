@@ -30,7 +30,7 @@ The system is monitored using Azure Monitor for performance and health tracking.
 ---
 
 ## 🔐 Security Implementation
-- NSG configured to allow only required ports (22, 80, 443)  
+- Network Security Group (NSG) configured to allow only required ports (22, 80, 443)  
 - HTTPS enforced using Let’s Encrypt SSL certificates  
 - Nginx configured as reverse proxy to prevent direct access to Node.js backend  
 - Secure SSH authentication implemented for server access  
