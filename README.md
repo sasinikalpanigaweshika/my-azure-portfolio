@@ -41,4 +41,21 @@ The system is monitored using Azure Monitor for performance and health tracking.
 - Node.js application deployment
 - Docker containerization
 - SSL/HTTPS encryption (Let's Encrypt)
-- Custom domain
+- Custom domain integration (DuckDNS)
+- Azure Monitor with CPU alert rules
+- Azure Load Balancer implementation
+- GitHub Actions CI/CD pipeline
+
+## 🏆 Key Achievements
+- Built a fully automated CI/CD pipeline enabling push-based deployments via GitHub Actions
+- Implemented layered security using NSG, SSH key authentication, and HTTPS encryption
+- Designed a scalable cloud architecture using Azure Load Balancer and Docker containerization
+- Improved deployment efficiency through automation and reduced manual intervention
+
+## 🧠 Skills Demonstrated
+Microsoft Azure, Linux Administration, Nginx, Node.js, Docker, SSL/TLS, Networking (VNet, NSG), Monitoring, Load Balancing, CI/CD Automation
+
+## 🎓 Certification
+Microsoft Azure Fundamentals (AZ-900)
+## 👤 Author
+Sasini Kalpani | Sri Lanka
