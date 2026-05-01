@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+      - master
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -14,8 +16,7 @@ jobs:
         with:
           host: 104.43.112.161
           username: azureuser
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          password: ${{ secrets.VM_PASSWORD }}
           script: |
             cd ~/myapp
-            git pull
             pm2 restart app
